@@ -8,8 +8,8 @@
 
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@import "../../reveal.js/css/theme/template/mixins";
+@import "../../reveal.js/css/theme/template/settings";
 // ---------------------------------------------
 
 
@@ -19,7 +19,7 @@
 @import "../../fonts/Roboto_Condensed/stylesheet.css";
 
 
-// Override theme settings (see ../template/settings.scss)
+// Override theme settings (see ../../reveal.js/css/theme/template/settings.scss)
 $otagoRed: #C70725;
 $otagoGold: #E09B21;
 $otagoBlue: #161D53;
@@ -202,7 +202,7 @@ body
 */
 
 // Theme template ------------------------------
-@import "../template/theme";
+@import "../../reveal.js/css/theme/template/theme";
 // ---------------------------------------------
 
 
