@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+		<title>Testing</title>
+		<meta name="generator" content="BBEdit 9.6" />
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<link rel="stylesheet" href="css/reveal.min.css" />
+		<link rel="stylesheet" href="css/theme/otago.css" id="theme" />
+
+		<link rel="stylesheet" href="custom.css" type="text/css" />
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css" />
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script type="text/javascript">
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+	</head>
+	
+	<body>
+	
+		<div class="reveal">
+		
+			<div class="slides">
+				
+				
+				<section class="titlepage">
+					<div class="slide-content empty-noindent">
+						<div class="align center">
+							<img src="images/OU-Logo-Colour.jpg" alt="University of Otago logo" width="100" height="166" />
+							<h2>INFO 214</h2>
+							<h2>Business ICT Infrastructure</h2>
+							<h1>Lecture 1: Introduction</h1>
+							<h3>Nigel Stanger</h3>
+							<h4>Department of Information Science</h4>
+							<h3>9 July, 2013</h3>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section data-state="background-ID-10082666">
+					<div class="slide-title">
+						<h1 class="title align center">What do businesses need?</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<div class="align center">
+	
+							<div class="fragment" data-fragment-index="1" style="float: left; width: 25%; margin-top: 0.5em;">
+								<img src="images/ID-10039223.png" alt="random illustration" style="width: 80%;" />
+							</div>
+							
+							<div class="fragment" data-fragment-index="1" style="float: left; width: 45%;">
+								<p><strong class="alert xx-large">Information</strong></p>
+								<table class="dl" style="margin-top: 3em;">
+									<tr class="fragment"> <td class="dt">Why?</td> <td>To make decisions</td> </tr>
+									<tr class="fragment"> <td class="dt">When?</td> <td>Now</td> </tr>
+									<tr class="fragment"> <td class="dt">Where?</td> <td>Everywhere</td> </tr>
+									<tr class="fragment"> <td class="dt">Who?</td> <td>Everyone</td> </tr>
+								</table>
+							</div>
+								
+							<div class="fragment" data-fragment-index="1" style="float: left; width: 30%; margin-top: 2em;">
+								<img src="images/ID-10045968.jpg" alt="random illustration" style="width: 80%; margin-bottom: 0px;" />
+								<p class="xx-small">images from FreeDigitalPhotos.net</p>
+							</div>
+						</div>
+					</div>
+					
+					<aside class="notes">Everywhere and everyone within the business, that is.</aside>
+				</section>
+				
+				
+				<section data-state="background-data-center">
+					<div class="slide-title">
+						<h1 class="title align center">How do most businesses<br />get their information?</h1>
+					</div>
+					
+					<div class="fragment slide-content titled-noindent">
+						<p class="align center"><strong class="alert huge">Using ICT</strong></p>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">The march of ICT progress</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<img class="align center" style="z-index: 10;" src="images/Timeline_base.svg" alt="ICT timeline" />
+						
+						<img class="align center fragment" style="z-index: 20;" src="images/Timeline_hardware.svg" alt="Timeline: hardware" />
+						
+						<img class="align center fragment" style="z-index: 20;" src="images/Timeline_software.svg" alt="Timeline: software" />
+						
+						<img class="align center fragment" style="z-index: 20;" src="images/Timeline_people.svg" alt="Timeline: people" />
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>In particular, storage capacity and network bandwidth are increasing at an amazing rate, with corresponding drops in price.</li>
+							
+							<li>We’ve gone from standalone, isolated applications that weren’t even physically connected to software that is highly integrated and <em>requires</em> a network to run. With wireless, access is available almost anywhere.</li>
+							
+							<li>Changes to business structures have pushed decision making further down the management hierarchy, driven by smaller staffing levels and the availability of cheap, powerful computers and ubiquitous, high capacity networking and storage. This has created a greater demand for information at all levels of the business, and thus a need to collect and store more data. These data are accessed from almost any location.</li>
+						</ul>
+					</aside>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">The ascent of information systems</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<img class="align center" src="images/7605_wpm_hires.png" alt="The Ascent of Man" />
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">The ascent of information systems</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<div class="align center">
+							<div style="width: 19%;" class="align center">
+								<img src="images/kattekrab_Mainframe.svg" alt="Mainframe" style="width: 75%;" /><br />
+								monolithic, standalone
+							</div>
+							<div style="width: 27%;" class="align center">
+								<img src="images/separation.svg" alt="Separation of components" style="width: 100%;" /><br />
+								separation of components
+							</div>
+							<div style="width: 27%;" class="align center">
+								<img src="images/internet_schema.svg" alt="Distribution of components" style="width: 75%;" /><br />
+								distribution of components
+							</div>
+							<div style="width: 27%;" class="align center">
+								<img src="images/cloud.svg" alt="Cloud" style="width: 100%;" /><br />
+								“cloud” of billions and billions of nodes
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">The ascent of information systems</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<img class="align center" src="images/cloudcomputing2.svg" alt="Cloud computing" />
+					</div>
+					
+					<aside class="notes">Pretty much any device these days can be attached to the network. This image only shows computing devices, but it could just as easily be a fridge or a television. Note the mixture of large, small, fixed and mobile devices.</aside>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Ever-increasing size and complexity</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<ul>
+								<li>Users</li>
+								<li>Data</li>
+								<li>Processing</li>
+								<li>Architecture</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Ever-increasing<br />distribution and mobility</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<ul>
+								<li>Modularisation</li>
+								<li>Interconnection</li>
+								<li>Communication</li>
+								<li>Integration</li>
+								<li>Bandwidth</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Information systems’<br />key infrastructure</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<ul>
+								<li>Information (!)
+								
+									<ul>
+										<li class="alert nobullet"><span>⇒</span> data storage</li>
+										<li class="nobullet"><span>⇒</span> data processing</li>
+									</ul>
+								
+								</li>
+							
+								<li>Communication (with other systems)
+								
+									<ul>
+										<li class="alert nobullet"><span>⇒</span> networking</li>
+										<li class="nobullet"><span>⇒</span> middleware</li>
+									</ul>
+								
+								</li>
+							
+								<li>User interface
+								
+									<ul>
+										<li>programming</li>
+										<li>interface design (HCI)</li>
+									</ul>
+								
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Information systems’<br />key infrastructure</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<h4><strong>ICT = <span class="alert">I</span>nformation and <span class="alert">C</span>ommunication Technology</strong></h4>
+							
+							<ul>
+								<li>No information without data!</li>
+								<li>No communication without networking!</li>
+							</ul>
+							
+							<div style="text-align: center;">
+								<p style="margin-top: 1em;">
+									<img src="images/facebook-logo.svg" alt="Facebook logo" style="width: 80px; margin-bottom: 0; margin-right: 0.5em;" />
+									<img src="images/twitter-logo.svg" alt="Twitter logo" style="width: 80px; margin-bottom: 0; margin-left: 0.5em;" /><br />
+									huge data &amp; huge network
+								</p>
+								<p style="margin-top: 1em;">“Twitter users generate a lot of data [7 TB/day], and doubling multiple times per year.” <span class="xx-small">Kevin Weil, Twitter (April 2010)</span></p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Databases are <em>everywhere</em></h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<table>
+								<tr>
+									<td style="vertical-align: middle; width: 40%;">
+										<ul>
+											<li>Dunedin Hospital</li>
+											<li>LINZ/councils</li>
+											<li>Human Genome</li>
+											<li>Facebook</li>
+											<li>Student records</li>
+										</ul>
+									</td>
+									
+									<td class="fragment" data-fragment-index="1" style="font-size: 200pt; line-height: 175pt; vertical-align: top; padding: 0;">}</td>
+									
+									<td class="fragment x-small" data-fragment-index="1" style="vertical-align: middle; padding-left: 0.5em;">large amounts of data often accessed simultaneously by large numbers of people</td>
+								</tr>
+							</table>
+							
+							<p style="text-align: center; margin-top: 2em;">Must design, implement, access and manage large, efficient, multi-user, corporate databases.</p>
+						</div>
+					</div>
+					
+					<aside class="notes">All of these applications generate large amounts of data, although the relative scale of each is quite different, e.g., a student records database will be much smaller than a typical genetic database. In INFO 214 we are interested in “real-world” databases, not the kind of thing that people create on their PC for their own use.</aside>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">How many databases are <em>you</em> listed in?</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<div class="align center">
+							<video width="800" height="600" controls>
+								<source src="video/Databases.mov" type="video/mp4" />
+								Your browser does not support HTML5 video.
+							</video>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Networks are <em>everywhere</em></h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<table>
+								<tr>
+									<td style="vertical-align: middle; width: 42.5%;">
+										<ul>
+											<li>Dunedin Hospital</li>
+											<li>University of Otago</li>
+											<li>Human Genome</li>
+											<li>Vodafone</li>
+											<li>Google</li>
+										</ul>
+									</td>
+									
+									<td class="fragment" data-fragment-index="1" style="font-size: 200pt; line-height: 175pt; vertical-align: top; padding: 0;">}</td>
+									
+									<td class="x-small fragment" data-fragment-index="1" style="vertical-align: middle; padding-left: 0.5em;">very large numbers of different hardware devices interconnected across often very large distances</td>
+								</tr>
+							</table>
+							
+							<p style="text-align: center; margin-top: 2em;">Must design, implement, access and manage large, heterogeneous, geographically dispersed networks.</p>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Databases and networks<br />share similar concepts</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<img class="align center" src="images/architecture-layers-database.svg" alt="ANSI/SPARC architecture" />
+						
+						<img class="align center fragment" src="images/architecture-layers-network.svg" alt="OSI architecture" />
+						
+						<img class="align center fragment" src="images/architecture-layers-multiple.svg" alt="Multiple layers" />
+						
+						<img class="align center fragment" src="images/architecture-layers-abstraction.svg" alt="Layers of abstraction" />
+						
+						<img class="align center fragment" src="images/architecture-layers-independence.svg" alt="Layers of independence" />
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Generic information<br />system architecture</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<img class="align center" src="images/IS_architecture-base.svg" alt="Generic IS architecture" />
+						
+						<img class="align center fragment" src="images/IS_architecture-221.svg" alt="INFO 221" />
+						
+						<img class="align center fragment" src="images/IS_architecture-214.svg" alt="INFO 214" />
+					</div>
+					
+					<aside class="notes">
+						<ol>
+							<li>Every information system, regardless of how it’s constructed, can be decomposed into the three very high-level components shown. In some systems these components will be very explicit, while in others the boundaries may be so fuzzy as to be almost indistinguishable. In simpler, non-distributed systems, the network component may be negligible or even non-existent.</li>
+							
+							<li>The front end is what end-users interact with. Typical functions include application processing, data validation, user interface, etc.</li>
+							
+							<li>The back end manages access to the data resources of the information system. Typical functions include data management, data validation, etc.</li>
+							
+							<li>The network component initiates, maintains and manages the connection between the front and back ends.</li>
+							
+							<li>In INFO 214 we will focus on the back end and network components. INFO 221 will cover some aspects of the front end.</li>
+						</ol>
+					</aside>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Putting INFO 214 in context</h1>
+					</div>
+					
+					<div class="slide-content titled-noindent">
+						<img class="align center" src="images/paper_context.svg" alt="Putting INFO 214 in context" />
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">A friendly warning</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<ul>
+								<li>We expect you to figure some things out yourself.</li>
+								<li><em>Learn to use the documentation!</em></li>
+								<li>Compare “real world”.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<aside class="notes">But help will be available if you get stuck on something!</aside>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Assumed knowledge & skills</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<ul>
+								<li>General understanding of information systems</li>
+								<li>Basic data modelling (ERDs)</li>
+								<li>Basic relational model (relations/tables, attributes/columns, keys)</li>
+								<li>Transforming ERDs into database structures</li>
+								<li>Client/server concepts</li>
+								<li>Basic programming (Python or Java)</li>
+								<li>Basic UI design</li>
+							</ul>
+						</div>
+					</div>
+					
+					<aside class="notes">Students should already be familiar with the basic concepts of ERDs and the relational model, and should have already used some form of ER modelling tool, and maybe even some basic SQL.</aside>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Overview of INFO 214</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<h4><strong>Part 1: Database Systems</strong></h4>
+							
+							<ul>
+								<li>Database management systems (DBMSs)</li>
+								<li>The Relational Model of Data</li>
+								<li>SQL</li>
+								<li>Data integrity</li>
+								<li>Database definition (tables, constraints, etc.)</li>
+								<li>Data manipulation (inserting, <em>querying</em>, etc.)</li>
+								<li>Transaction processing and database security</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">Overview of INFO 214</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<h4><strong>Part 2: Business Data Communications</strong></h4>
+							
+							<ul>
+								<li>OSI & TCP/IP architectures</li>
+								<li>Key protocols of the Internet</li>
+								<li>Network security: issues and solutions</li>
+								<li>Network management principles</li>
+								<li>Developing network applications</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="slide-title">
+						<h1 class="title align center">What’s next?</h1>
+					</div>
+					
+					<div class="slide-content titled-indent">
+						<div class="align left">
+							<h4><strong>Database management systems (DBMS)</strong></h4>
+							
+							<ul>
+								<li class="fragment">What are they?</li>
+								<li class="fragment">Why are they useful?</li>
+								<li class="fragment">What do/should they do?</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				
+			</div>
+		
+		</div>
+	
+		<script type="text/javascript" src="lib/js/head.min.js"></script>
+		<script type="text/javascript" src="js/reveal.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/position-images.min.js"></script>
+	
+		<script type="text/javascript">
+	
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				
+				width: 1024,
+				height: 768,
+				maxScale: 3.0,
+				margin: 0.05,
+	
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+	
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'socket.io/socket.io.js', async: true },
+					{ src: 'plugin/notes-server/client.js', async: true }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+	
+	</body>
+</html>

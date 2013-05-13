@@ -1,0 +1,17 @@
+.background-ID-10082666 .reveal .state-background
+{
+	background:					url(images/ID-10082666-BG-blur.png) no-repeat center center fixed;
+	-webkit-background-size:	cover;
+	-moz-background-size:		cover;
+	-o-background-size:			cover;
+	background-size:			cover;
+}
+
+.background-data-center .reveal .state-background
+{
+	background:					url(images/data_center-BG-blur.png) no-repeat center center fixed;
+	-webkit-background-size:	cover;
+	-moz-background-size:		cover;
+	-o-background-size:			cover;
+	background-size:			cover;
+}

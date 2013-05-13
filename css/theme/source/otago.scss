@@ -1,0 +1,311 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import "../../fonts/Roboto/stylesheet.css";
+@import "../../fonts/Roboto_Condensed/stylesheet.css";
+
+
+// Override theme settings (see ../template/settings.scss)
+$otagoRed: #C70725;
+$otagoGold: #E09B21;
+$otagoBlue: #161D53;
+
+$mainFont: 'robotoregular', sans-serif;
+$mainFontSize: 24pt;
+$mainColor: #000;
+$headingFont: 'roboto_condensedregular', sans-serif;
+$headingColor: $otagoBlue;
+// $headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #fff;
+$linkColor: $otagoBlue;
+$linkColorHover: lighten( $linkColor, 20% );
+// $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+$xxsmallFontSize:	60%;			// 3:5
+$xsmallFontSize:	75%;			// 3:4
+$smallFontSize:		89%;			// 8:9
+$mediumFontSize:	$mainFontSize;	// 1:1
+$largeFontSize:		120%;			// 6:5
+$xlargeFontSize:	150%;			// 3:2
+$xxlargeFontSize:	200%;			// 2:1
+$hugeFontSize:		300%;			// 3:1
+
+/*
+$mainFontWeight:	400;
+$boldFontWeight:	700;
+$italicFontWeight:	400italic;
+*/
+
+// The maximum width of an image on a slide. 95% seems to work the best (by experiment). This can always be overridden on an image-by-image basis, but any image alignment will also need to be manually overriden, as this is depdendent on the image size.
+$maxImageDimension: 95%;
+
+// The "min" variable covers top and left alignment, the "max" variable bottom and right.
+$imageMinAlignMargin: 0%;
+$imageMaxAlignMargin: 100% - ( $maxImageDimension / 2 );
+$imageMidAlignMargin: 50% - ( $maxImageDimension / 2 );
+
+// Standard horizontal indent for slides. This becomes the padding on the left and right sides of the indented elements.
+$slideContentPadding:	12.5%;
+$indentedImageSize:		100% - ( 2 * $slideContentPadding );
+
+
+section.titlepage
+{
+	h3, h4, h5
+	{
+		color: $mainColor;
+	}
+}
+
+
+table.dl
+{
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.75;
+	
+	td.dt
+	{
+		text-align: right;
+		color: $otagoBlue;
+	}
+}
+
+
+li.nobullet
+{
+	list-style-type: none;
+	padding-left: 0;
+	text-indent: -1.5em;
+	
+	span
+	{
+		float: left;
+		width: 1.5em;
+	}
+}
+
+
+@mixin general-alignment ( $vertical, $horizontal, $contentPadding )
+{
+	display: table-cell;
+	vertical-align: $vertical;
+	text-align: $horizontal;
+	padding-left: $contentPadding;
+	padding-right: $contentPadding;
+}
+
+@mixin image-alignment ( $contentPadding )
+{
+	position: absolute;
+	max-width: $maxImageDimension - $contentPadding;
+	max-height: $maxImageDimension;
+	// Need to set padding to 0 otherwise the padding from @general-alignment will creep in.
+	padding: 0;
+}
+
+
+@mixin content-base ( $height, $contentPadding )
+{
+	position: relative;
+	display: table;
+	width: 100%;
+	height: $height;
+	
+	// Alignment for everything...
+	.align {  } // empty class for ease of jQuery filtering
+
+	.top-left		{ @include general-alignment ( top,    left,   $contentPadding ) }
+	.top			{ @include general-alignment ( top,    center, $contentPadding ) }
+	.top-right		{ @include general-alignment ( top,    right,  $contentPadding ) }
+	.left			{ @include general-alignment ( middle, left,   $contentPadding ) }
+	.center			{ @include general-alignment ( middle, center, $contentPadding ) }
+	.right			{ @include general-alignment ( middle, right,  $contentPadding ) }
+	.bottom-left	{ @include general-alignment ( bottom, left,   $contentPadding ) }
+	.bottom			{ @include general-alignment ( bottom, center, $contentPadding ) }
+	.bottom-right	{ @include general-alignment ( bottom, right,  $contentPadding ) }
+	
+	
+	// ...except images.
+	img.top-left
+	{
+		top: 0px;
+		left: 0px;
+		@include image-alignment ( $contentPadding )
+	}
+	img.top-right
+	{
+		top: 0px;
+		right: 0px;
+		@include image-alignment ( $contentPadding )
+	}
+	img.bottom-left
+	{
+		bottom: 0px;
+		left: 0px;
+		@include image-alignment ( $contentPadding )
+	}
+	img.bottom-right
+	{
+		bottom: 0px;
+		right: 0px;
+		@include image-alignment ( $contentPadding )
+	}
+	/*
+		Alignment for the remaining five is done in JavaScript, as we need to calculate positions based on the (unknown in advance) image dimensions.
+	*/
+	img.top		{ @include image-alignment ( $contentPadding ) }
+	img.left	{ @include image-alignment ( $contentPadding ) }
+	img.center	{ @include image-alignment ( $contentPadding ) }
+	img.right	{ @include image-alignment ( $contentPadding ) }
+	img.bottom	{ @include image-alignment ( $contentPadding ) }
+}
+
+
+.empty-noindent		{ @include content-base ( 100%, 0% ); }
+.empty-indent		{ @include content-base ( 100%, $slideContentPadding ); }
+
+.titled-noindent	{ @include content-base ( 80%, 0% ); }
+.titled-indent		{ @include content-base ( 80%, $slideContentPadding ); }
+
+.slide-title		{ @include content-base ( 20%, 0% ); }
+.slide-content		{  } // empty class for ease of jQuery filtering
+
+
+.list
+{
+	padding-left: 10%;
+}
+
+
+/*
+body
+{
+	border-top: 40px solid $otagoBlue;
+	border-bottom: 40px solid $otagoGold;
+}
+*/
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.reveal
+{
+/*
+	font-weight: $mainFontWeight;
+*/
+	
+	h1 { font-size: $xxlargeFontSize; }
+	h2 { font-size: $xlargeFontSize; }
+	h3 { font-size: $largeFontSize; }
+	h4 { font-size: $mediumFontSize; }
+	h5 { font-size: $smallFontSize; }
+	h6 { font-size: $xsmallFontSize; }
+	
+	strong, bold
+	{
+		font-family: "robotobold";
+		font-weight: normal;
+		
+		em, it
+		{
+			font-family: "robotobold_italic";
+			font-style: normal;
+		}
+	}
+	.title, .subtitle
+	{
+		font-family: "roboto_condensedbold";
+		font-weight: normal;
+		
+		em, it
+		{
+			font-family: "roboto_condensedbold_italic";
+			font-style: normal;
+		}
+	}
+	em, it
+	{
+		font-family: "robotoitalic";
+		font-style: normal;
+		
+		strong, bold
+		{
+			font-family: "robotobold_italic";
+			font-weight: normal;
+		}
+	}
+
+	section
+	{
+/*
+		border-top: 40px solid $otagoBlue;
+		border-bottom: 40px solid $otagoGold;
+		position: relative;
+*/
+		border: 1px solid black;
+		width: 1000px;
+		height: 750px;
+		
+		img
+		{
+			border: none;
+			box-shadow: none;
+		}
+	}
+	
+	.otago-red, .alert		{ color: $otagoRed; }
+	.otago-gold				{ color: $otagoGold; }
+	.otago-blue, .structure	{ color: $otagoBlue; }
+		
+	.xx-small	{ font-size: $xxsmallFontSize; }
+	.x-small	{ font-size: $xsmallFontSize; }
+	.small		{ font-size: $smallFontSize; }
+	.medium		{ font-size: $mediumFontSize; }
+	.large		{ font-size: $largeFontSize; }
+	.x-large	{ font-size: $xlargeFontSize; }
+	.xx-large	{ font-size: $xxlargeFontSize; }
+	.huge		{ font-size: $hugeFontSize; }
+	
+	ul { list-style-type: square; }
+	ul, ol, dl
+	{
+		font-size: $mainFontSize;
+		line-height: 1.75;
+/*
+		margin-left: 15%;
+*/
+		li ul
+		{
+			font-size: $smallFontSize;
+			list-style-type: disc;
+			li ul
+			{
+				font-size: $xsmallFontSize;
+				list-style-type: circle;
+			}
+		}
+	}
+
+}
+
+
+
+
