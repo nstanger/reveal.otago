@@ -58,13 +58,13 @@
      inkscape:cx="473.32511"
      inkscape:cy="257.14303"
      inkscape:document-units="cm"
-     inkscape:current-layer="timeline"
+     inkscape:current-layer="svg1355"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:grid-points="true"
      gridtolerance="4px"
      inkscape:guide-points="true"
-     inkscape:window-width="1948"
+     inkscape:window-width="1920"
      inkscape:window-height="1147"
      inkscape:window-x="0"
      inkscape:window-y="22"
@@ -1461,7 +1461,9 @@
      id="hardware"
      inkscape:label="Hardware"
      style="display:none"
-     transform="translate(3.5433071,3.0368143)">
+     transform="translate(3.5433071,3.0368143)"
+     class="fragment"
+     data-fragment-index="1">
     <rect
        style="opacity:0.7;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect4010"
@@ -1518,7 +1520,9 @@
      inkscape:label="Software"
      id="software"
      inkscape:groupmode="layer"
-     transform="translate(3.5433071,3.0368143)">
+     transform="translate(3.5433071,3.0368143)"
+     class="fragment"
+     data-fragment-index="2">
     <rect
        y="230.82144"
        x="0"
@@ -1564,7 +1568,9 @@
      id="people"
      inkscape:label="People"
      style="display:none"
-     transform="translate(3.5433071,3.0368143)">
+     transform="translate(3.5433071,3.0368143)"
+     class="fragment"
+     data-fragment-index="3">
     <rect
        style="opacity:0.7;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect4044"
