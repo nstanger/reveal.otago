@@ -33,6 +33,11 @@ function inlineSVGs()
 				
 				// Copy across the originals style (for the positioning in particular).
 				svg.attr( 'style', img.attr( 'style' ) );
+				svg.attr( 'preserveAspectRatio', 'xMinYMin meet' );
+				svg.attr( 'viewBox', '0 0 ' + svg.attr( 'width' ) + ' ' + svg.attr( 'height' ) );
+				svg.attr( 'width', img.width() );
+				svg.attr( 'height', img.height() );
+				// For some reason, the SVG ends up offset by about 15 pixels upwards??
 				
 				// Replace image with new SVG
 				img.replaceWith( svg );
