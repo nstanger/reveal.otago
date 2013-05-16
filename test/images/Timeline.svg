@@ -55,7 +55,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4102292"
-     inkscape:cx="473.32511"
+     inkscape:cx="387.52345"
      inkscape:cy="257.14303"
      inkscape:document-units="cm"
      inkscape:current-layer="svg1355"
@@ -1460,10 +1460,11 @@
      inkscape:groupmode="layer"
      id="hardware"
      inkscape:label="Hardware"
-     style="display:none"
+     style="display:inline"
      transform="translate(3.5433071,3.0368143)"
      class="fragment"
      data-fragment-index="1">
+  <g class="fragment fade-out" data-fragment-index="2">
     <rect
        style="opacity:0.7;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect4010"
@@ -1515,14 +1516,16 @@
          y="252.60378"
          style="font-size:32px;font-weight:bold;fill:#c70725;fill-opacity:1;-inkscape-font-specification:ComputerModern Sans Bold">Hardware has become smaller, cheaper and more powerful</tspan></text>
   </g>
+  </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="Software"
      id="software"
      inkscape:groupmode="layer"
      transform="translate(3.5433071,3.0368143)"
      class="fragment"
      data-fragment-index="2">
+  <g class="fragment fade-out" data-fragment-index="3">
     <rect
        y="230.82144"
        x="0"
@@ -1563,11 +1566,12 @@
          id="tspan4040"
          sodipodi:role="line">Software has become more modular, distributed and connected</tspan></text>
   </g>
+  </g>
   <g
      inkscape:groupmode="layer"
      id="people"
      inkscape:label="People"
-     style="display:none"
+     style="display:inline"
      transform="translate(3.5433071,3.0368143)"
      class="fragment"
      data-fragment-index="3">
