@@ -18,7 +18,7 @@ JS:=$(JS_DIR)/otago-initialisation.min.js $(JS_DIR)/position-images.min.js $(JS_
 
 
 
-test: themes js
+test: themes js reveal
 	mkdir -p $(DEPLOYMENT_DIR)
 	cp -pRf $(FONT_DIR) $(DEPLOYMENT_DIR)
 	cp -pRf $(REVEAL_DIR)/* $(DEPLOYMENT_DIR)
@@ -27,7 +27,7 @@ test: themes js
 	cp -pRf $(JS_DIR)/*.js $(DEPLOYMENT_DIR)/$(JS_DIR)
 
 
-release: themes js
+release: themes js reveal
 	echo "TODO!"
 
 
@@ -40,3 +40,7 @@ themes: $(THEMES)
 
 $(THEME_DIR)/%.css: $(THEME_DIR)/%.scss $(REVEAL_IMPORTS) $(FONT_IMPORTS)
 	sass $< $@
+
+
+reveal:
+	cd $(REVEAL_DIR); grunt
