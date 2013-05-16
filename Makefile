@@ -20,6 +20,7 @@ JS:=$(JS_DIR)/otago-initialisation.min.js $(JS_DIR)/position-images.min.js $(JS_
 
 test: themes js reveal
 	mkdir -p $(DEPLOYMENT_DIR)
+	rm -rf $(DEPLOYMENT_DIR)/*
 	cp -pRf $(FONT_DIR) $(DEPLOYMENT_DIR)
 	cp -pRf $(REVEAL_DIR)/* $(DEPLOYMENT_DIR)
 	cp -pRf $(TEST_DIR)/* $(DEPLOYMENT_DIR)
