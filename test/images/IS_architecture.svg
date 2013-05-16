@@ -363,7 +363,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="INFO221"
-     transform="translate(1.7716535,1.6871167)">
+     transform="translate(1.7716535,1.6871167)"
+     class="fragment">
     <rect
        style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3870);enable-background:accumulate"
        id="rect3820"
@@ -389,7 +390,8 @@
      id="layer3"
      inkscape:label="INFO214"
      style="display:inline"
-     transform="translate(1.7716535,1.6871167)">
+     transform="translate(1.7716535,1.6871167)"
+     class="fragment">
     <rect
        style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3866);enable-background:accumulate"
        id="rect3834"
