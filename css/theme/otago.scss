@@ -142,25 +142,25 @@ li.nobullet
 	
 	
 	// ...except images.
-	img.top-left
+	img.top-left, svg.top-left
 	{
 		top: 0px;
 		left: 0px;
 		@include image-alignment ( $contentPadding )
 	}
-	img.top-right
+	img.top-right, svg.top-right
 	{
 		top: 0px;
 		right: 0px;
 		@include image-alignment ( $contentPadding )
 	}
-	img.bottom-left
+	img.bottom-left, svg.bottom-left
 	{
 		bottom: 0px;
 		left: 0px;
 		@include image-alignment ( $contentPadding )
 	}
-	img.bottom-right
+	img.bottom-right, svg.bottom-right
 	{
 		bottom: 0px;
 		right: 0px;
@@ -169,11 +169,11 @@ li.nobullet
 	/*
 		Alignment for the remaining five is done in JavaScript, as we need to calculate positions based on the (unknown in advance) image dimensions.
 	*/
-	img.top		{ @include image-alignment ( $contentPadding ) }
-	img.left	{ @include image-alignment ( $contentPadding ) }
-	img.center	{ @include image-alignment ( $contentPadding ) }
-	img.right	{ @include image-alignment ( $contentPadding ) }
-	img.bottom	{ @include image-alignment ( $contentPadding ) }
+	img.top, svg.top		{ @include image-alignment ( $contentPadding ) }
+	img.left, svg.left		{ @include image-alignment ( $contentPadding ) }
+	img.center, svg.center	{ @include image-alignment ( $contentPadding ) }
+	img.right, svg.right	{ @include image-alignment ( $contentPadding ) }
+	img.bottom, svg.bottom	{ @include image-alignment ( $contentPadding ) }
 }
 
 
