@@ -205,6 +205,12 @@ body
 @import "../../reveal.js/css/theme/template/theme";
 // ---------------------------------------------
 
+@mixin standard-image-properties
+{
+	border: none;
+	box-shadow: none;
+}
+
 
 .reveal
 {
@@ -266,10 +272,15 @@ body
 		width: 1000px;
 		height: 750px;
 		
-		img
+		img, svg
 		{
-			border: none;
-			box-shadow: none;
+			@include standard-image-properties
+		}
+		
+		img.align, svg.align
+		{
+			margin: 0 0;
+			@include standard-image-properties
 		}
 	}
 	
