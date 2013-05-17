@@ -18,7 +18,7 @@ JS:=$(JS_DIR)/otago-initialisation.min.js $(JS_DIR)/position-images.min.js $(JS_
 
 
 
-test: themes js reveal
+test: themes js
 	mkdir -p $(DEPLOYMENT_DIR)
 	rm -rf $(DEPLOYMENT_DIR)/*
 	cp -pRf $(FONT_DIR) $(DEPLOYMENT_DIR)
@@ -28,7 +28,7 @@ test: themes js reveal
 	cp -pRf $(JS_DIR)/*.js $(DEPLOYMENT_DIR)/$(JS_DIR)
 
 
-release: themes js reveal
+release: themes js
 	echo "TODO!"
 
 
