@@ -14,7 +14,7 @@ REVEAL_IMPORTS:=$(REVEAL_TEMPLATES_DIR)/mixins.scss $(REVEAL_TEMPLATES_DIR)/sett
 FONT_IMPORTS:=$(FONT_DIR)/Roboto/stylesheet.css $(FONT_DIR)/Roboto_Condensed/stylesheet.css
 
 THEMES:=$(THEME_DIR)/otago.css
-JS:=$(JS_DIR)/otago-initialisation.min.js $(JS_DIR)/position-images.min.js $(JS_DIR)/svg-fragments.min.js $(JS_DIR)/jquery-1.9.1.min.js
+JS:=$(JS_DIR)/otago-initialisation.min.js $(JS_DIR)/position-images.min.js $(JS_DIR)/jquery-1.9.1.min.js
 
 
 

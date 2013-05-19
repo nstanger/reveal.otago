@@ -97,7 +97,7 @@
 					</div>
 					
 					<div class="slide-content titled-noindent">
-						<img class="align center svg" src="images/Timeline.svg" alt="ICT timeline" />
+						<img data-inline-svg class="align center" src="images/Timeline.svg" alt="ICT timeline" />
 					</div>
 
 					<aside class="notes">
@@ -354,7 +354,7 @@
 					</div>
 					
 					<div class="slide-content titled-noindent">
-						<img class="align center svg" src="images/architecture-layers.svg" alt="ANSI/SPARC architecture" />
+						<img data-inline-svg class="align center" src="images/architecture-layers.svg" alt="ANSI/SPARC architecture" />
 					</div>
 				</section>
 				
@@ -365,7 +365,7 @@
 					</div>
 					
 					<div class="slide-content titled-noindent">
-						<img class="align center svg" src="images/IS_architecture.svg" alt="Generic IS architecture" />
+						<img data-inline-svg class="align center" src="images/IS_architecture.svg" alt="Generic IS architecture" />
 					</div>
 					
 					<aside class="notes">
@@ -507,7 +507,6 @@
 		<script type="text/javascript" src="lib/js/head.min.js"></script>
 		<script type="text/javascript" src="js/reveal.js"></script>
 		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-		<script type="text/javascript" src="js/svg-fragments.js"></script>
 		<script type="text/javascript" src="js/position-images.js"></script>
 		<script type="text/javascript" src="js/otago-initialisation.js"></script>
 	
@@ -537,6 +536,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/inline-svg/inline-svg.js', async: true, condition: function() { return !!document.querySelector( '[data-inline-svg]' ); } },
 // 					{ src: 'socket.io/socket.io.js', async: true },
 // 					{ src: 'plugin/notes-server/client.js', async: true }
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
