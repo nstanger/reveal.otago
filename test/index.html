@@ -119,8 +119,8 @@
 						<h1 class="title align center">The march of ICT progress</h1>
 					</div>
 					
-					<div class="slide-content titled-noindent">
-						<img data-inline-svg class="align center" src="images/Timeline.svg" alt="ICT timeline" />
+					<div class="slide-content titled-noindent img-container">
+						<img data-inline-svg class="align center middle maximise" src="images/Timeline.svg" alt="ICT timeline" />
 					</div>
 
 					<aside class="notes">
@@ -140,8 +140,8 @@
 						<h1 class="title align center">The ascent of information systems</h1>
 					</div>
 					
-					<div class="slide-content titled-noindent">
-						<img class="align center" src="images/7605_wpm_hires.png" alt="The Ascent of Man" />
+					<div class="slide-content titled-noindent img-container">
+						<img class="align center middle maximise" src="images/7605_wpm_hires.png" alt="The Ascent of Man" />
 					</div>
 				</section>
 				
@@ -179,8 +179,8 @@
 						<h1 class="title align center">The ascent of information systems</h1>
 					</div>
 					
-					<div class="slide-content titled-noindent">
-						<img class="align center" src="images/cloudcomputing2.svg" alt="Cloud computing" />
+					<div class="slide-content titled-noindent img-container">
+						<img class="align center middle maximise" src="images/cloudcomputing2.svg" alt="Cloud computing" />
 					</div>
 					
 					<aside class="notes">Pretty much any device these days can be attached to the network. This image only shows computing devices, but it could just as easily be a fridge or a television. Note the mixture of large, small, fixed and mobile devices.</aside>
@@ -330,7 +330,7 @@
 					</div>
 					
 					<div class="slide-content titled-noindent">
-						<div class="align center">
+						<div class="align center middle">
 							<video width="800" height="600" controls data-autoplay>
 								<source src="video/Databases.mov" type="video/mp4" />
 								Your browser does not support HTML5 video.
@@ -376,8 +376,8 @@
 						<h1 class="title align center">Databases and networks<br />share similar concepts</h1>
 					</div>
 					
-					<div class="slide-content titled-noindent">
-						<img data-inline-svg class="align center" src="images/architecture-layers.svg" alt="ANSI/SPARC architecture" />
+					<div class="slide-content titled-noindent img-container">
+						<img data-inline-svg class="align center middle maximise" src="images/architecture-layers.svg" alt="ANSI/SPARC architecture" />
 					</div>
 				</section>
 				
@@ -387,8 +387,8 @@
 						<h1 class="title align center">Generic information<br />system architecture</h1>
 					</div>
 					
-					<div class="slide-content titled-noindent">
-						<img data-inline-svg class="align center" src="images/IS_architecture.svg" alt="Generic IS architecture" />
+					<div class="slide-content titled-noindent img-container">
+						<img data-inline-svg class="align center middle maximise" src="images/IS_architecture.svg" alt="Generic IS architecture" />
 					</div>
 					
 					<aside class="notes">
@@ -412,8 +412,8 @@
 						<h1 class="title align center">Putting INFO 214 in context</h1>
 					</div>
 					
-					<div class="slide-content titled-noindent">
-						<img class="align center" src="images/paper_context.svg" alt="Putting INFO 214 in context" />
+					<div class="slide-content titled-noindent img-container">
+						<img class="align center middle maximise" src="images/paper_context.svg" alt="Putting INFO 214 in context" />
 					</div>
 				</section>
 				
@@ -530,8 +530,10 @@
 		<script type="text/javascript" src="lib/js/head.min.js"></script>
 		<script type="text/javascript" src="js/reveal.js"></script>
 		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<!-- 
 		<script type="text/javascript" src="js/position-images.js"></script>
 		<script type="text/javascript" src="js/otago-initialisation.js"></script>
+ -->
 	
 		<script type="text/javascript">
 	
@@ -559,7 +561,8 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/inline-svg/inline-svg.js', async: true, condition: function() { return !!document.querySelector( '[data-inline-svg]' ); } },
+					{ src: 'plugin/position-images/position-images.js', async: true, condition: function() { return !!document.querySelector( 'img.align' ); } },
+// 					{ src: 'plugin/inline-svg/inline-svg.js', async: true, condition: function() { return !!document.querySelector( '[data-inline-svg]' ); } },
 // 					{ src: 'socket.io/socket.io.js', async: true },
 // 					{ src: 'plugin/notes-server/client.js', async: true }
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }

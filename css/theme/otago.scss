@@ -128,8 +128,6 @@ li.nobullet
 	height: $height;
 	
 	// Alignment for everything...
-	.align {  } // empty class for ease of jQuery filtering
-
 	.top-left		{ @include general-alignment ( top,    left,   $contentPadding ) }
 	.top			{ @include general-alignment ( top,    center, $contentPadding ) }
 	.top-right		{ @include general-alignment ( top,    right,  $contentPadding ) }
