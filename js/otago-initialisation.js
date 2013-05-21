@@ -1,6 +1,0 @@
-$(window).load(
-	function()
-	{
-		positionImages();
-	}
-);
