@@ -184,6 +184,12 @@ li.nobullet
 .slide-title		{ @include content-base ( 20%, 0% ); }
 .slide-content		{  } // empty class for ease of jQuery filtering
 
+.img-container
+{
+	height: 100%;	// Otherwise it will automatically size, which is probably wrong.
+	width: 100%;	// It can always be overridden in the style attribute.
+}
+	
 
 .list
 {
