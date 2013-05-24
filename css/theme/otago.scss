@@ -128,15 +128,15 @@ li.nobullet
 	height: $height;
 	
 	// Alignment for everything...
-	.top-left		{ @include general-alignment ( top,    left,   $contentPadding ) }
-	.top			{ @include general-alignment ( top,    center, $contentPadding ) }
-	.top-right		{ @include general-alignment ( top,    right,  $contentPadding ) }
-	.left			{ @include general-alignment ( middle, left,   $contentPadding ) }
-	.center			{ @include general-alignment ( middle, center, $contentPadding ) }
-	.right			{ @include general-alignment ( middle, right,  $contentPadding ) }
-	.bottom-left	{ @include general-alignment ( bottom, left,   $contentPadding ) }
-	.bottom			{ @include general-alignment ( bottom, center, $contentPadding ) }
-	.bottom-right	{ @include general-alignment ( bottom, right,  $contentPadding ) }
+	.top-left		{ @include general-alignment ( top,    left,   $contentPadding ); }
+	.top			{ @include general-alignment ( top,    center, $contentPadding ); }
+	.top-right		{ @include general-alignment ( top,    right,  $contentPadding ); }
+	.left			{ @include general-alignment ( middle, left,   $contentPadding ); }
+	.center			{ @include general-alignment ( middle, center, $contentPadding ); }
+	.right			{ @include general-alignment ( middle, right,  $contentPadding ); }
+	.bottom-left	{ @include general-alignment ( bottom, left,   $contentPadding ); }
+	.bottom			{ @include general-alignment ( bottom, center, $contentPadding ); }
+	.bottom-right	{ @include general-alignment ( bottom, right,  $contentPadding ); }
 	
 	
 	// ...except images.
@@ -144,44 +144,44 @@ li.nobullet
 	{
 		top: 0px;
 		left: 0px;
-		@include image-alignment ( $contentPadding )
+		@include image-alignment ( $contentPadding );
 	}
 	img.top-right, svg.top-right
 	{
 		top: 0px;
 		right: 0px;
-		@include image-alignment ( $contentPadding )
+		@include image-alignment ( $contentPadding );
 	}
 	img.bottom-left, svg.bottom-left
 	{
 		bottom: 0px;
 		left: 0px;
-		@include image-alignment ( $contentPadding )
+		@include image-alignment ( $contentPadding );
 	}
 	img.bottom-right, svg.bottom-right
 	{
 		bottom: 0px;
 		right: 0px;
-		@include image-alignment ( $contentPadding )
+		@include image-alignment ( $contentPadding );
 	}
 	/*
 		Alignment for the remaining five is done in JavaScript, as we need to calculate positions based on the (unknown in advance) image dimensions.
 	*/
-	img.top, svg.top		{ @include image-alignment ( $contentPadding ) }
-	img.left, svg.left		{ @include image-alignment ( $contentPadding ) }
-	img.center, svg.center	{ @include image-alignment ( $contentPadding ) }
-	img.right, svg.right	{ @include image-alignment ( $contentPadding ) }
-	img.bottom, svg.bottom	{ @include image-alignment ( $contentPadding ) }
+	img.top, svg.top		{ @include image-alignment ( $contentPadding ); }
+	img.left, svg.left		{ @include image-alignment ( $contentPadding ); }
+	img.center, svg.center	{ @include image-alignment ( $contentPadding ); }
+	img.right, svg.right	{ @include image-alignment ( $contentPadding ); }
+	img.bottom, svg.bottom	{ @include image-alignment ( $contentPadding ); }
 }
 
 
-.empty-noindent		{ @include content-base ( 100%, 0% ); }
-.empty-indent		{ @include content-base ( 100%, $slideContentPadding ); }
+.empty-noindent		{ @include content-base ( 100%, 0% ); div { display: table; } }
+.empty-indent		{ @include content-base ( 100%, $slideContentPadding ); div { display: table; } }
 
-.titled-noindent	{ @include content-base ( 80%, 0% ); }
-.titled-indent		{ @include content-base ( 80%, $slideContentPadding ); }
+.titled-noindent	{ @include content-base ( 80%, 0% ); div { display: table; } }
+.titled-indent		{ @include content-base ( 80%, $slideContentPadding ); div { display: table; } }
 
-.slide-title		{ @include content-base ( 20%, 0% ); }
+.slide-title		{ @include content-base ( 20%, 0% ); div { display: table; } }
 .slide-content		{  } // empty class for ease of jQuery filtering
 
 .img-container
